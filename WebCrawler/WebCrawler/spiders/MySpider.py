@@ -19,11 +19,25 @@ class MyspiderSpider(scrapy.Spider):
 
     
 
-    def PageParser(self,response):
+ def PageParser(self,response):
+        # all categories
+        # categories = response.xpath("//ul[@class='post-category']//a/text()").getall()
+
+        # first category
         category1 = response.xpath("//ul[@class='post-category']/li[1]/a/text()").get()
 
+        # second category
+        category2 = response.xpath("//ul[@class='post-category']/li[2]/a/text()").get()
+
+        # third category
+        category3 = response.xpath("//ul[@class='post-category']/li[3]/a/text()").get()
+        
         body = "".join(response.xpath("/html/body//article/div[3]//text()").getall())
         yield {
             'category1':category1,
+            'category2':category2,
+            'category3':category3,
             'body':body
         }
+
+    

@@ -1,4 +1,4 @@
-# Scrapy settings for MstajbakhshWebCrawler project
+# Scrapy settings for TextClassification project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'MstajbakhshWebCrawler'
+BOT_NAME = 'TextClassification'
 
-SPIDER_MODULES = ['MstajbakhshWebCrawler.spiders']
-NEWSPIDER_MODULE = 'MstajbakhshWebCrawler.spiders'
+SPIDER_MODULES = ['TextClassification.spiders']
+NEWSPIDER_MODULE = 'TextClassification.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'MstajbakhshWebCrawler (+http://www.yourdomain.com)'
+#USER_AGENT = 'TextClassification (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'MstajbakhshWebCrawler.middlewares.MstajbakhshwebcrawlerSpiderMiddleware': 543,
+#    'TextClassification.middlewares.TextClassificationSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'MstajbakhshWebCrawler.middlewares.MstajbakhshwebcrawlerDownloaderMiddleware': 543,
+#    'TextClassification.middlewares.TextClassificationDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'MstajbakhshWebCrawler.pipelines.MstajbakhshwebcrawlerPipeline': 300,
+#    'TextClassification.pipelines.TextClassificationPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

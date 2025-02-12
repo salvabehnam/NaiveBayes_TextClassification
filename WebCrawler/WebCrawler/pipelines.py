@@ -8,6 +8,6 @@
 from itemadapter import ItemAdapter
 
 
-class MstajbakhshwebcrawlerPipeline:
+class TextClassificationPipeline:
     def process_item(self, item, spider):
         return item

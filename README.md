@@ -14,20 +14,20 @@ This project implements a **web crawler using Scrapy** to extract textual data f
     ├── requirements.txt            
     │
     ├── data/                        
-    │   ├── text.csv                 # Extracted text data (Generated via Scrapy)
+    │   ├── text.csv                
     │
-    ├── MstajbakhshWebCrawler/        # Scrapy project directory
-    │   ├── __init__.py               # Python package initialization
-    │   ├── items.py                  # Defines structured data items
-    │   ├── middlewares.py            # Custom middleware for request/response handling
-    │   ├── pipelines.py              # Data processing and storage pipeline
-    │   ├── settings.py               # Scrapy configuration settings
+    ├── WebCrawler/        
+    │   ├── __init__.py               
+    │   ├── items.py                 
+    │   ├── middlewares.py         
+    │   ├── pipelines.py              
+    │   ├── settings.py             
     │   │
-    │   ├── spiders/                  # Directory for Scrapy spiders
-    │   │   ├── __init__.py           # Python package initialization
-    │   │   ├── MySpider.py           # The main web crawler spider
+    │   ├── spiders/                 
+    │   │   ├── __init__.py           
+    │   │   ├── MySpider.py           
     │
-    ├── scrapy.cfg                    # Scrapy project configuration file
+    ├── scrapy.cfg                    
 
 ## 📊 Data Collection Process
 - The spider **automatically extracts text data** from a target website.

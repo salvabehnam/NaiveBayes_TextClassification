@@ -7,7 +7,7 @@ This project implements a **web crawler using Scrapy** to extract textual data f
 - **Structured Data Extraction**: Saves extracted data in CSV format for easy analysis.
 - **Efficient Data Pipelines**: Handles raw text data processing.
 - **Extensible & Scalable**: Can be modified to scrape multiple websites for NLP research.
-
+ 
 ## 📂 Project Structure
     WebScraper/
     ├── README.md                   
